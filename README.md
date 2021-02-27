@@ -2,7 +2,10 @@
 
 
 # Welcome to Contao utf8 arrows insert-tag bundle
-This bundle is still under construction.
+Use Contao insert tags to add arrows.
+
+E.g. {{arrow::RIGHTWARDS_ARROW}} will add →
+E.g. {{arrow::DOWNWARDS_ARROW}} will add ↓
 
 
 Char|Name|Dec

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 /*
  * This file is part of Contao utf8 arrows insert-tag bundle.
- * 
+ *
  * (c) Marko Cupic 2021 <m.cupic@gmx.ch>
  * @license MIT
  * For the full copyright and license information,
@@ -19,7 +19,7 @@ use Contao\ManagerPlugin\Bundle\Config\BundleConfig;
 use Contao\ManagerPlugin\Bundle\Parser\ParserInterface;
 
 /**
- * Class Plugin
+ * Class Plugin.
  */
 class Plugin implements BundlePluginInterface
 {

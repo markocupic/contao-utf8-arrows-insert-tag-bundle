@@ -1,4 +1,9 @@
 services:
+    _defaults:
+      autowire: true
+      public: true
+
+    Markocupic\ContaoUtf8ArrowsInsertTagBundle\Listener\ContaoHooks\InserttagListener: ~
 
 
 

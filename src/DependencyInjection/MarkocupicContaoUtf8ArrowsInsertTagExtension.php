@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 /*
  * This file is part of Contao utf8 arrows insert-tag bundle.
- * 
+ *
  * (c) Marko Cupic 2021 <m.cupic@gmx.ch>
  * @license MIT
  * For the full copyright and license information,
@@ -20,7 +20,7 @@ use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
 /**
- * Class MarkocupicContaoUtf8ArrowsInsertTagExtension
+ * Class MarkocupicContaoUtf8ArrowsInsertTagExtension.
  */
 class MarkocupicContaoUtf8ArrowsInsertTagExtension extends Extension
 {
@@ -31,11 +31,10 @@ class MarkocupicContaoUtf8ArrowsInsertTagExtension extends Extension
     {
         $loader = new YamlFileLoader(
             $container,
-            new FileLocator(__DIR__ . '/../Resources/config')
+            new FileLocator(__DIR__.'/../Resources/config')
         );
 
         $loader->load('parameters.yml');
         $loader->load('services.yml');
-        $loader->load('listener.yml');
     }
 }
