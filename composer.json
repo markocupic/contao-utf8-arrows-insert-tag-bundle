@@ -1,6 +1,6 @@
 {
     "name": "markocupic/contao-utf8-arrows-insert-tag-bundle",
-    "description": "Insert utf8 arows via insert tags",
+    "description": "Insert utf8 arrows via contao insert tags",
     "keywords": [
         "contao",
         "bundle",
