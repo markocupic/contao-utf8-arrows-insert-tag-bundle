@@ -32,18 +32,18 @@ class InserttagListener
     {
         $strTag = trim(strtolower($strTag), '{}');
 
-        if (false === strpos($strTag, 'arrow::')) {
+        if (0 !== strpos($strTag, 'arrow::')) {
             return false;
         }
 
-        $tag = explode('::', $tag);
+        $tag = explode('::', $strTag);
 
         if (empty($tag) || !isset($tag[1])) {
             return false;
         }
 
         if ($this->container->hasParameter('markocupic.contao_utf8_arrows_insert_tag.'.$tag[1])) {
-            $dec = $this->container->hasParameter('markocupic.contao_utf8_arrows_insert_tag.'.$tag[1]);
+            $dec = (string) $this->container->getParameter('markocupic.contao_utf8_arrows_insert_tag.'.$tag[1]);
 
             return sprintf('&#%s;', $dec);
         }
