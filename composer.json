@@ -4,8 +4,9 @@
     "keywords": [
         "contao",
         "bundle",
-        "tag 3",
-        "tag 4"
+        "insert-tag",
+        "arrows",
+        "utf-8"
     ],
     "type": "contao-bundle",
     "license": "MIT",
