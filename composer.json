@@ -23,7 +23,7 @@
         "source": "https://github.com/markocupic/contao-utf8-arrows-insert-tag-bundle"
     },
     "require": {
-        "contao/core-bundle": "^4.9"
+        "contao/core-bundle": "^4.13 || ^5.0"
     },
     "require-dev": {
         "contao/manager-plugin": "^2.3",
@@ -36,16 +36,7 @@
     "autoload": {
         "psr-4": {
             "Markocupic\\ContaoUtf8ArrowsInsertTagBundle\\": "src/"
-        },
-        "classmap": [
-            "src/Resources/contao"
-        ],
-        "exclude-from-classmap": [
-            "src/Resources/contao/config",
-            "src/Resources/contao/dca",
-            "src/Resources/contao/languages",
-            "src/Resources/contao/templates"
-        ]
+        }
     },
     "extra": {
         "contao-manager-plugin": "Markocupic\\ContaoUtf8ArrowsInsertTagBundle\\ContaoManager\\Plugin"

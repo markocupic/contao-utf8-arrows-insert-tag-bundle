@@ -3,7 +3,7 @@
 /*
  * This file is part of Contao utf8 arrows insert-tag bundle.
  * 
- * (c) Marko Cupic 2021 <m.cupic@gmx.ch>
+ * (c) Marko Cupic 2024 <m.cupic@gmx.ch>
  * @license MIT
  * For the full copyright and license information,
  * please view the LICENSE file that was distributed with this source code.
@@ -21,8 +21,6 @@ use Markocupic\ContaoUtf8ArrowsInsertTagBundle\ContaoManager\Plugin;
 use Markocupic\ContaoUtf8ArrowsInsertTagBundle\MarkocupicContaoUtf8ArrowsInsertTagBundle;
 
 /**
- * Class PluginTest
- *
  * @package Markocupic\ContaoUtf8ArrowsInsertTagBundle\Tests\ContaoManager
  */
 class PluginTest extends ContaoTestCase

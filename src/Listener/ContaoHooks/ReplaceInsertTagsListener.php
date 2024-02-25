@@ -5,7 +5,7 @@ declare(strict_types=1);
 /*
  * This file is part of Contao utf8 arrows insert-tag bundle.
  *
- * (c) Marko Cupic 2021 <m.cupic@gmx.ch>
+ * (c) Marko Cupic 2024 <m.cupic@gmx.ch>
  * @license MIT
  * For the full copyright and license information,
  * please view the LICENSE file that was distributed with this source code.
@@ -14,9 +14,11 @@ declare(strict_types=1);
 
 namespace Markocupic\ContaoUtf8ArrowsInsertTagBundle\Listener\ContaoHooks;
 
+use Contao\CoreBundle\DependencyInjection\Attribute\AsHook;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
-class InserttagListener
+#[AsHook('replaceInsertTags', priority: 100)]
+class ReplaceInsertTagsListener
 {
     /**
      * @var ContainerInterface
@@ -28,7 +30,7 @@ class InserttagListener
         $this->container = $container;
     }
 
-    public function onReplaceInsertTags(string $strTag)
+    public function __invoke(string $strTag)
     {
         $strTag = trim(strtolower($strTag), '{}');
 
