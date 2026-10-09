@@ -14,7 +14,6 @@ declare(strict_types=1);
 
 namespace Markocupic\ContaoUtf8ArrowsInsertTagBundle;
 
-use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class MarkocupicContaoUtf8ArrowsInsertTagBundle extends Bundle
@@ -22,13 +21,5 @@ class MarkocupicContaoUtf8ArrowsInsertTagBundle extends Bundle
     public function getPath(): string
     {
         return \dirname(__DIR__);
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function build(ContainerBuilder $container): void
-    {
-        parent::build($container);
     }
 }

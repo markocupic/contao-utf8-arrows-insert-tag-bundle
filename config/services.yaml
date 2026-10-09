@@ -1,11 +1,11 @@
 services:
     _defaults:
-      autowire: true
-      public: true
+        autowire: true
+        autoconfigure: true
 
-    Markocupic\ContaoUtf8ArrowsInsertTagBundle\Listener\ContaoHooks\InserttagListener: ~
-
-
-
-
-
+    Markocupic\ContaoUtf8ArrowsInsertTagBundle\:
+        resource: ../src/
+        exclude:
+            - ../src/ContaoManager
+            - ../src/DependencyInjection
+            - ../src/MarkocupicContaoUtf8ArrowsInsertTagBundle.php

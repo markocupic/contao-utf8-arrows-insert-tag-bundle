@@ -1,0 +1,14 @@
+# IDE
+/.idea/
+
+# Coding standard tools
+/.ecs/vendor/
+/.ecs/composer.lock
+
+# Composer
+/vendor/
+/composer.lock
+
+# PHPUnit
+/.phpunit.result.cache
+/.phpunit.cache/
