@@ -4,8 +4,19 @@
 
 Use Contao insert tags to add arrows.
 
-E.g. {{arrow::RIGHTWARDS_ARROW}} will add →
-E.g. {{arrow::DOWNWARDS_ARROW}} will add ↓
+E.g. `{{arrow::RIGHTWARDS_ARROW}}` will add →
+E.g. `{{arrow::downwards_arrow}}` will add ↓
+
+The arrow name is case-insensitive. The insert tag returns the UTF-8 character itself.
+
+## Requirements
+
+- PHP 8.1 or higher (Contao 6 requires a more recent PHP version)
+- Contao 5.3 or Contao 6
+
+Contao 4.13 is no longer supported. Please use version 1.x of this extension for Contao 4.13.
+
+## Arrows
 
 | Char | Name                                                | Dec  |
 |------|-----------------------------------------------------|------|
